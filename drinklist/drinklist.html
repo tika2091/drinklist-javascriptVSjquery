@@ -1,0 +1,46 @@
+<doctype html>
+	<html lang="en">
+	<head>
+		<title>
+			Javascript Drink List!
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+
+	<body>
+		<h1>Drink Selections</h1>
+		<div id="drink-div"></div>
+
+
+<script type="text/javascript">
+
+var drinklist=[
+"cofee:$5",
+"Tea:$7",
+"soda:$5",
+"juice:$10",
+"milk:$12",
+
+];
+
+var drinkdiv=document.getElementById("drink-div");
+for(var i=0; i<drinklist.length; i++){
+
+
+	// creates new div for each drink
+	var newdiv=document.createElement("div");
+
+	// it puts each dirnk into the newdivs
+	newdiv.innerHTML=drinklist[i];
+
+	drinkdiv.appendChild(newdiv);
+
+}
+
+</script>
+
+
+
+	</body>
+	</html>
